@@ -30,7 +30,7 @@ class Carrito {
 
 class Usuario {
   /**
-   * Crea una instancia de Usuario.
+   * Crea una instancia de Usuario. Chicharron
    * @param {nombre de usuario} nombre 
    * @param {correo del usuario} correo 
    */
