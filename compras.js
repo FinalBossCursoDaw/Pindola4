@@ -29,16 +29,26 @@ class Carrito {
 }
 
 class Usuario {
+  /**
+   * Crea una instancia de Usuario. Chicharron
+   * @param {nombre de usuario} nombre 
+   * @param {correo del usuario} correo 
+   */
   constructor(nombre, correo) {
     this.nombre = nombre;
     this.correo = correo;
     this.carrito = new Carrito();
   }
-
+/**
+ * Agrega un producto al carrito del usuario
+ * @param {productoAgregado} producto 
+ */
   agregarProductoAlCarrito(producto) {
     this.carrito.agregarProducto(producto);
   }
-
+/**
+ * Finaliza la compra del usuario
+ */
   finalizarCompra() {
     const total = this.carrito.calcularTotalCarrito();
     console.log(`Usuario ${this.nombre} ha realizado una compra por un total de ${total}€`);
