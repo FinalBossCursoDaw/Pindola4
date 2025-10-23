@@ -1,4 +1,13 @@
+/***
+ * Clase Producto para representar un artículo en el sistema de compras.
+ */
 class Producto {
+  /*** 
+   * Constructor de la clase Producto
+   * @param {string} nombre - Nombre del producto.
+   * @param {number} precio - Precio unitario del producto.
+   * @param {number} cantidad - Cantidad del producto.
+   */
   constructor(nombre, precio, cantidad) {
     this.nombre = nombre;
     this.precio = precio;
@@ -77,6 +86,9 @@ class Usuario {
   }
 }
 
+/***
+ * Ejemplo de uso de las clases Producto, Carrito y Usuario.
+ */
 
 const producto1 = new Producto("Laptop", 1200, 1);
 const producto2 = new Producto("Mouse", 20, 2);
